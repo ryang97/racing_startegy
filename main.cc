@@ -7,13 +7,22 @@ int main () {
 
   for(int i=2; i<50; ++i) {
 
-    Time ti{0, 0, 'S', 2, 97.3, 98.0, 98.6};
-    Time tti{0, 0, 'M', 2, 97.3, 98.0, 98.6};
-    Time ttti{0, 0, 'H', 2, 97.3, 98.0, 98.6};
+    Time ti{0, 0, ' ', 0, 97.3, 98.0, 98.6};
+    Time tti{0, 0, ' ', 0, 97.3, 98.0, 98.6};
+    Time ttti{0, 0, ' ', 0, 97.3, 98.0, 98.6};
 
     ti.setLap(1, i);
     tti.setLap(1, i);
     ttti.setLap(1, i);
+
+    ti.setTyre('S');
+    tti.setTyre('M');
+    ttti.setTyre('H');
+
+    ti.setFuel(1.83);
+    tti.setFuel(1.83);
+    ttti.setFuel(1.83);
+
 
     float total = ti.stintTime();
     int min = total / 60;

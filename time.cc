@@ -46,4 +46,17 @@ void Time::setLap(int startLap, int endLap) {
   this->startLap = startLap;
   this->endLap = endLap;
 } 
-    
+ 
+void Time::setFuel(float fuelConsumption) {
+  this->fuelConsumption = fuelConsumption;
+}
+
+void Time::setTyre(char tyre) {
+  this->tyre = tyre;
+}
+
+
+
+
+
+   

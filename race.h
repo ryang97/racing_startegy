@@ -14,7 +14,7 @@ class Race {
  public:
   Race(int lap, float soft_time, float med_time, float hard_time, float pitTime);
   ~Race();
-  virtual float shortestTime ();
+  virtual float shortestTime () = 0;
 };
 
 #endif

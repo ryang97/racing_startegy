@@ -15,11 +15,14 @@ class Time {
   float medLapTime(int age);
   float hardLapTime(int age);
  public:
-  Time(int startLap, int endLap, char tyre, float fuelComsumption, float softTime,
+  Time(int startLap, int endLap, char tyre, float fuelConsumption, float softTime,
        float medTime, float hardTime);
   ~Time();
   float stintTime();
   void setLap(int startLap, int endLap);
+  void setFuel(float fuelConsumption);
+  void setTyre(char tyre);
+
 };
     
 #endif
