@@ -19,6 +19,7 @@ class Time {
        float medTime, float hardTime);
   ~Time();
   float stintTime();
+  void setLap(int startLap, int endLap);
 };
     
 #endif
