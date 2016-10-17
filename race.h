@@ -4,13 +4,14 @@
 #include "time.h"
 
 class Race {
- public:
+ protected:
   int lap;
   float soft_time;
   float med_time;
   float hard_time;
   float pitTime;
   float fuelConsumption;
+ public:
   Race(int lap, float soft_time, float med_time, float hard_time, float pitTime, float fuelConsumption);
   ~Race();
   virtual float shortestTime() = 0;

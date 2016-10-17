@@ -3,7 +3,8 @@
 #include "time.h"
 using namespace std;
 
-oneStop::oneStop(int lap, float soft_time, float med_time, float hard_time, float pitTime, float fuelConsumption, int firstStop): Race{lap, soft_time, med_time, hard_time, pitTime, fuelConsumption}, firstStop{firstStop} {}
+oneStop::oneStop(int lap, float soft_time, float med_time, float hard_time, float pitTime, float fuelConsumption, int firstStop):
+      Race{lap, soft_time, med_time, hard_time, pitTime, fuelConsumption}, firstStop{firstStop} {}
 
 oneStop::~oneStop(){}
 
