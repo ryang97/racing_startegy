@@ -11,11 +11,11 @@ Time::~Time(){}
 
 
 float Time::softLapTime(int age) { 
-  return age * 0.22;
+  return age * 0.32;
 }
 
 float Time::medLapTime(int age) { 
-  return age * 0.13;
+  return age * 0.18;
 }
 
 float Time::hardLapTime(int age) { 
@@ -28,6 +28,7 @@ float Time::stintTime() {
   for ( int i = 0; i < lap ; ++i ) {
     if ((tyre == 'S') or (tyre == 's')) {
       totalTime = totalTime + softTime + softLapTime(i) - fuelConsumption * (startLap - 1 + i) * 0.03; // every 10 kg fuel saves 0.3 // second per lap
+//      cout<<"fuel time "<<fuelConsumption * (startLap - 1 + i) * 0.03<<endl;
     }
     else if ((tyre == 'M') or (tyre == 'm')) {
       totalTime = totalTime + medTime + medLapTime(i)

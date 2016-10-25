@@ -40,7 +40,7 @@ float threeStop::shortestTime() {
                     or (secondTyre != fourthTyre) or (thirdTyre != fourthTyre)) and 
                    (totalTime > t1.stintTime() + t2.stintTime() + t3.stintTime() + t4.stintTime() + (pitTime * 3))) {
                     totalTime = t1.stintTime() + t2.stintTime() + t3.stintTime() + t4.stintTime() + (pitTime * 3);
-                  cout << totalTime << endl;
+//                  cout << totalTime << endl;
                   finalFirstTyre = firstTyre;
                   finalSecondTyre = secondTyre;
                   finalThirdTyre = thirdTyre;
@@ -53,6 +53,7 @@ float threeStop::shortestTime() {
             }
           }
         }
+  //      cout<<endl;
       }
     }
   }
