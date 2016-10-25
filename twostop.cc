@@ -31,18 +31,20 @@ float twoStop::shortestTime() {
             Time t3{secondStop+1, lap, thirdTyre, fuelConsumption, soft_time, med_time, hard_time};    
             if (((firstTyre != secondTyre) or (secondTyre != thirdTyre) or (thirdTyre != firstTyre)) and 
                 (totalTime > t1.stintTime() + t2.stintTime() + t3.stintTime() + (pitTime * 2))) {
-              totalTime = t1.stintTime() + t2.stintTime() + t3.stintTime() + pitTime;
+              totalTime = t1.stintTime() + t2.stintTime() + t3.stintTime() + (pitTime * 2);
               finalFirstTyre = firstTyre;
               finalSecondTyre = secondTyre;
               finalThirdTyre = thirdTyre;
               finalFirstStop = firstStop;
               finalSecondStop = secondStop;
+            }
+          }
         }
       }
     }
   }
   cout<<"the first stop should happen in lap "<<finalFirstStop<<endl;
-  cout<<"the second stop should happen in lap"<<finalSecondStop<<endl;
+  cout<<"the second stop should happen in lap "<<finalSecondStop<<endl;
   cout<<"the first tyre is: "<<finalFirstTyre
       <<" and the second tyre is: "<<finalSecondTyre
       <<" and the third tyre is "<<finalThirdTyre<<endl; 
