@@ -39,10 +39,10 @@ float fourStop::shortestTime() {
                   for (int e = 0; e < 3; ++e) {
                     char fifthTyre = char_arr[e];
                     Time t1{1, firstStop, firstTyre, fuelConsumption, soft_time, med_time, hard_time};
-                    Time t2{firstStop+1, secondStop, secondTyre, fuelConsumption, soft_time, med_time, hard_time};
-                    Time t3{secondStop+1, thirdStop, thirdTyre, fuelConsumption, soft_time, med_time, hard_time}; 
-                    Time t4{thirdStop+1, fourthStop, fourthTyre, fuelConsumption, soft_time, med_time, hard_time};   
-                    Time t5{fourthStop+1, lap, fifthTyre, fuelConsumption, soft_time, med_time, hard_time};
+                    Time t2{firstStop, secondStop, secondTyre, fuelConsumption, soft_time, med_time, hard_time};
+                    Time t3{secondStop, thirdStop, thirdTyre, fuelConsumption, soft_time, med_time, hard_time}; 
+                    Time t4{thirdStop, fourthStop, fourthTyre, fuelConsumption, soft_time, med_time, hard_time};   
+                    Time t5{fourthStop, lap, fifthTyre, fuelConsumption, soft_time, med_time, hard_time};
                     if (((firstTyre != secondTyre) or (firstTyre != thirdTyre) or (firstTyre != fourthTyre) or (firstTyre != fifthTyre) or 
                          (secondTyre != thirdTyre) or (secondTyre != fourthTyre) or (secondTyre != fifthTyre) or 
                          (thirdTyre != fourthTyre) or (thirdTyre != fifthTyre) or

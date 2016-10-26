@@ -33,9 +33,9 @@ float threeStop::shortestTime() {
               for (int d = 0; d < 3; ++d) {
                 char fourthTyre = char_arr[d];
                 Time t1{1, firstStop, firstTyre, fuelConsumption, soft_time, med_time, hard_time};
-                Time t2{firstStop+1, secondStop, secondTyre, fuelConsumption, soft_time, med_time, hard_time};
-                Time t3{secondStop+1, thirdStop, thirdTyre, fuelConsumption, soft_time, med_time, hard_time}; 
-                Time t4{thirdStop+1, lap, fourthTyre, fuelConsumption, soft_time, med_time, hard_time};   
+                Time t2{firstStop, secondStop, secondTyre, fuelConsumption, soft_time, med_time, hard_time};
+                Time t3{secondStop, thirdStop, thirdTyre, fuelConsumption, soft_time, med_time, hard_time}; 
+                Time t4{thirdStop, lap, fourthTyre, fuelConsumption, soft_time, med_time, hard_time};   
                 if (((firstTyre != secondTyre) or (firstTyre != thirdTyre) or (firstTyre != fourthTyre) or (secondTyre != thirdTyre) 
                     or (secondTyre != fourthTyre) or (thirdTyre != fourthTyre)) and 
                    (totalTime > t1.stintTime() + t2.stintTime() + t3.stintTime() + t4.stintTime() + (pitTime * 3))) {

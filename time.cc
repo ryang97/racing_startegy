@@ -11,11 +11,11 @@ Time::~Time(){}
 
 
 float Time::softLapTime(int age) { 
-  return age * 0.32;
+  return age * 0.22;
 }
 
 float Time::medLapTime(int age) { 
-  return age * 0.18;
+  return age * 0.1;
 }
 
 float Time::hardLapTime(int age) { 

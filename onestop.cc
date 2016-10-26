@@ -21,7 +21,7 @@ float oneStop::shortestTime() {
       for (int b = 0; b < 3; ++b) {
         char secondTyre = char_arr[b];
         Time t1{1, firstStop, firstTyre, fuelConsumption, soft_time, med_time, hard_time};
-        Time t2{firstStop+1, lap, secondTyre, fuelConsumption, soft_time, med_time, hard_time};
+        Time t2{firstStop, lap, secondTyre, fuelConsumption, soft_time, med_time, hard_time};
         if ((firstTyre != secondTyre) and 
             (totalTime > t1.stintTime() + t2.stintTime() + pitTime)) {
           totalTime = t1.stintTime() + t2.stintTime() + pitTime;
